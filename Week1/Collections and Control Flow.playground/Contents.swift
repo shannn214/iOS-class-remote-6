@@ -22,21 +22,21 @@ myFriends.insert("Kevin", at:0)
 print(myFriends[0...3])
 
 /*
-    (another way?)
-    for item in myFriends{
-    print(item)
-    }
-*/
+ (another way?)
+ for item in myFriends{
+ print(item)
+ }
+ */
 
 //6
 myFriends.count
 
 /*
  6. There is no one at index 5.
-    I use myFriends.count to check wheather index 5 is out of my array's existing
-    bounds or not. In doing this, I can avoid to type myFriends[5] directly and cause the
-    system crash.
-*/
+ I use myFriends.count to check wheather index 5 is out of my array's existing
+ bounds or not. In doing this, I can avoid to type myFriends[5] directly and cause the
+ system crash.
+ */
 
 
 
@@ -163,8 +163,6 @@ case 4: print("Director")
 default:
     print("We don't have this job.")
 }
-
-
 
 
 
