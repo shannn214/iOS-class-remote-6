@@ -52,9 +52,6 @@ func newOwner(myPet: [String: Pet]) -> People? {
 
 
 
-//not sure what I'm coding right now...
-
-
 
 
 
