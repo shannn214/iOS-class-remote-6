@@ -47,17 +47,17 @@ class ViewController: UIViewController {
 
 private extension ViewController{
     enum Compare {
-        case smaller
-        case greater
+        case less
+        case more
         case equal
     }
     
     func gameNumber(number: Int){
         switch comNumber(number: number, target: targetNumber){
-        case .smaller:
+        case .less:
             minNumber = max(minNumber, number)
             numberRange()
-        case .greater:
+        case .more:
             maxNumber = min(maxNumber, number)
             numberRange()
         case .equal:
@@ -67,9 +67,9 @@ private extension ViewController{
     
     func comNumber(number: Int, target: Int) -> Compare{
         if number < target {
-            return .smaller
+            return .less
         } else if number > target {
-            return .greater
+            return .more
         }
         return .equal
     }
